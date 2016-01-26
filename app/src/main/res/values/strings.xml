@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">My App Portfolio</string>
-    <string name="button1_text">SPOTIFY STREAMER</string>
-    <string name="button2_text">SCORES APP</string>
-    <string name="button3_text">LIBRARY APP</string>
-    <string name="button4_text">BUILD IT BIGGER</string>
-    <string name="button5_text">XYZ READER</string>
-    <string name="button6_text">CAPSTONE : MY OWN APP</string>
+    <string name="spotify_button_text">SPOTIFY STREAMER</string>
+    <string name="scores_button_text">SCORES APP</string>
+    <string name="library_button_text">LIBRARY APP</string>
+    <string name="build_button_text">BUILD IT BIGGER</string>
+    <string name="xyz_button_text">XYZ READER</string>
+    <string name="capstone_button_text">CAPSTONE : MY OWN APP</string>
 
 </resources>
