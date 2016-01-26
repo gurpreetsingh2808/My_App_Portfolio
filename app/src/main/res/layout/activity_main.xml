@@ -1,85 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:background="@color/background">
+    tools:context=".MainActivity">
 
-    <TextView android:text="My Nanodegree Apps!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="25sp"
-        android:textColor="@color/colorAccent"
-        android:id="@+id/textView" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button1_text"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        style="@style/ButtonStyle"
-        android:onClick="displayToast"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button2_text"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        style="@style/ButtonStyle"
-        android:onClick="displayToast"/>
+            <TextView
+                android:id="@+id/textViewNanodegree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="My Nanodegree Apps!"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
 
-    <Button
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button3_text"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        style="@style/ButtonStyle"
-        android:onClick="displayToast"/>
+            <Button
+                android:id="@+id/buttonSpotify"
+                style="@style/ButtonStyle"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewNanodegree"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:onClick="displayToast"
+                android:text="@string/spotify_button_text" />
 
-    <Button
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button4_text"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        style="@style/ButtonStyle"
-        android:onClick="displayToast"/>
+            <Button
+                android:id="@+id/buttonScores"
+                style="@style/ButtonStyle"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonSpotify"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:onClick="displayToast"
+                android:text="@string/scores_button_text" />
 
-    <Button
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button5_text"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        style="@style/ButtonStyle"
-        android:onClick="displayToast"/>
+            <Button
+                android:id="@+id/buttonLibrary"
+                style="@style/ButtonStyle"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonScores"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:onClick="displayToast"
+                android:text="@string/library_button_text" />
 
-    <Button
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button6_text"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorAccent"
-        style="@style/ButtonStyle"
-        android:onClick="displayToast"/>
+            <Button
+                android:id="@+id/buttonBuild"
+                style="@style/ButtonStyle"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonLibrary"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:onClick="displayToast"
+                android:text="@string/build_button_text" />
+
+            <Button
+                android:id="@+id/buttonXYZ"
+                style="@style/ButtonStyle"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonBuild"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:onClick="displayToast"
+                android:text="@string/xyz_button_text" />
+
+            <Button
+                android:id="@+id/buttonCapstone"
+                style="@style/ButtonStyle"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonXYZ"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:onClick="displayToast"
+                android:text="@string/capstone_button_text" />
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
